@@ -1,0 +1,57 @@
+:source-highlighter: highlightjs
+
+= ReadMe
+
+== このソフトウェアについて
+
+パンくずリスト生成スクリプトにて記号と要素の配置順が間違っていたのを修正した。
+
+== 開発環境
+
+* LinuxMint 17.3 MATE 32bit
+** http://ytyaru.hatenablog.com/entry/2017/05/30/000000[rbenv]
+*** Ruby 2.4.0
+**** http://ytyaru.hatenablog.com/entry/2017/06/20/000000[AsciiDoctor]
+** Firefox
+*** http://ytyaru.hatenablog.com/entry/2017/06/19/000000[AsciiDoc ビューア]
+** pluma
+*** http://ytyaru.hatenablog.com/entry/2017/06/18/000000[AsciiDoc ハイライト]
+
+== 参考
+
+* http://asciidoctor.org/docs/user-manual/#by-line-ranges
+
+== 実行
+
+[source, sh]
+----
+python3 NextPrevNavi.py
+----
+
+== 結果
+
+* HTML文字列が表示される。
+
+そのHTMLを手書きで `test.html` に追加してみた。ブラウザで表示確認できる。
+
+== 課題
+
+* "次"の記号が必ず右側になってしまう
+    * 縦書きの場合、"次"は左側である。対応したい
+
+== ライセンス
+
+このソフトウェアはCC0ライセンスである。
+
+image:http://i.creativecommons.org/p/zero/1.0/88x31.png[link=http://creativecommons.org/publicdomain/zero/1.0/deed.ja]
+
+利用したソフトウェアとそのライセンスは以下。感謝。
+
+[options="header, autowidth"]
+|=======================
+|Library|License|Copyright
+|http://asciidoctor.org/[AsciiDoctor]|https://github.com/asciidoctor/asciidoctor/blob/master/LICENSE.adoc[MIT]|Copyright (C) 2012-2016 Dan Allen, Ryan Waldron and the Asciidoctor Project
+|https://highlightjs.org/[highlight.js]|https://github.com/isagalaev/highlight.js/blob/master/LICENSE[BSD 3-clause]|Copyright (c) 2006, Ivan Sagalaev
+|http://fontawesome.io/icon/home/[FontAwesome]|http://fontawesome.io/license/[MIT]|https://github.com/FortAwesome/Font-Awesome
+|=======================
+
